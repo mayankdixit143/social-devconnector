@@ -3,7 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 require("./core/mongo")();
-const passport = require("passport");
+const passport = require("passport is required");
 
 const app = express();
 
@@ -20,6 +20,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/api", api);
 
-app.get("/hello", (req, res) => res.send("Hello World"));
+app.get("/hello", (req, res) => res.send("Hello World to the new one "));
 
 module.exports = app;
